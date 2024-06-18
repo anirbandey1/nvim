@@ -8,3 +8,4 @@
 vim.cmd('autocmd FileType cpp setlocal commentstring=//\\ %s')
 vim.cmd('autocmd FileType dosini setlocal commentstring=#\\ %s')
 vim.cmd('autocmd FileType javascriptreact setlocal commentstring={/*\\ %s\\ */}')
+vim.cmd('autocmd FileType svelte setlocal commentstring=<!--\\ %s\\ -->')
