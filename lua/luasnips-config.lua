@@ -3,16 +3,16 @@
 
 
 -- Load vs code style snippets
-require("luasnip.loaders.from_vscode").lazy_load({paths = "./snippets/vs-code-snippets"})
+-- require("luasnip.loaders.from_vscode").lazy_load({paths = "./snippets/vs-code-snippets"})
 
 -- Jump to next snippet field with <Tab> in insert, select, and visual mode
-vim.api.nvim_set_keymap("i", "<Tab>", "luasnip#jumpable(1) ? '<Plug>luasnip-jump-next' : '<Tab>'", { expr = true, silent = true })
-vim.api.nvim_set_keymap("s", "<Tab>", "luasnip#jumpable(1) ? '<Plug>luasnip-jump-next' : '<Tab>'", { expr = true, silent = true })
-vim.api.nvim_set_keymap("v", "<Tab>", "luasnip#jumpable(1) ? '<Plug>luasnip-jump-next' : '<Tab>'", { expr = true, silent = true })
--- Jump to previous snippet field with <S-Tab> in insert, select, and visual mode
-vim.api.nvim_set_keymap("i", "<S-Tab>", "luasnip#jumpable(-1) ? '<Plug>luasnip-jump-prev' : '<S-Tab>'", { expr = true, silent = true })
-vim.api.nvim_set_keymap("s", "<S-Tab>", "luasnip#jumpable(-1) ? '<Plug>luasnip-jump-prev' : '<S-Tab>'", { expr = true, silent = true })
-vim.api.nvim_set_keymap("v", "<S-Tab>", "luasnip#jumpable(-1) ? '<Plug>luasnip-jump-prev' : '<S-Tab>'", { expr = true, silent = true })
+-- vim.api.nvim_set_keymap("i", "<Tab>", "luasnip#jumpable(1) ? '<Plug>luasnip-jump-next' : '<Tab>'", { expr = true, silent = true })
+-- vim.api.nvim_set_keymap("s", "<Tab>", "luasnip#jumpable(1) ? '<Plug>luasnip-jump-next' : '<Tab>'", { expr = true, silent = true })
+-- vim.api.nvim_set_keymap("v", "<Tab>", "luasnip#jumpable(1) ? '<Plug>luasnip-jump-next' : '<Tab>'", { expr = true, silent = true })
+-- -- Jump to previous snippet field with <S-Tab> in insert, select, and visual mode
+-- vim.api.nvim_set_keymap("i", "<S-Tab>", "luasnip#jumpable(-1) ? '<Plug>luasnip-jump-prev' : '<S-Tab>'", { expr = true, silent = true })
+-- vim.api.nvim_set_keymap("s", "<S-Tab>", "luasnip#jumpable(-1) ? '<Plug>luasnip-jump-prev' : '<S-Tab>'", { expr = true, silent = true })
+-- vim.api.nvim_set_keymap("v", "<S-Tab>", "luasnip#jumpable(-1) ? '<Plug>luasnip-jump-prev' : '<S-Tab>'", { expr = true, silent = true })
 
 
 
@@ -59,7 +59,7 @@ vim.api.nvim_set_keymap("v", "<S-Tab>", "luasnip#jumpable(-1) ? '<Plug>luasnip-j
 -- require("luasnip.loaders.from_snipmate").load()
 -- specify the full path...
 -- require("luasnip.loaders.from_snipmate").lazy_load({paths = "~/.config/nvim/snippets"})
-require("luasnip.loaders.from_snipmate").lazy_load({paths = "~/.config/nvim/snippets/snipmate-snippets"})
+-- require("luasnip.loaders.from_snipmate").lazy_load({paths = "~/.config/nvim/snippets/snipmate-snippets"})
 -- or relative to the directory of $MYVIMRC
 -- require("luasnip.loaders.from_snipmate").lazy_load({paths = "./snippets"})
 
