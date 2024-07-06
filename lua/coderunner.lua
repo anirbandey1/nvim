@@ -53,8 +53,8 @@ function Coderunner(key)
            execTerm(string.format('%s ; %s',cppCompileFast,cppCompiledExecutable))
        elseif ext=="java" then
            exec(string.format('cd %s ; mkdir -p build ; javac %s -d build ; cd build ; java %s',dir,fn,fnwe))
-       elseif ext=="sh" then
-           exec(string.format('cd %s ; sh %s',dir,fp))
+       -- elseif ext=="sh" then
+       --     exec(string.format('cd %s ; sh %s',dir,fp))
        elseif ext=="py" then
            exec(string.format('cd %s ; python %s',dir,fp))
        elseif ext=="js" then
@@ -74,8 +74,8 @@ function Coderunner(key)
             execTerm(string.format('%s ; %s',cppCompileSafe,cppCompiledExecutable))
         elseif ext=="java" then
             execTerm(string.format('cd %s ; mkdir -p build ; javac %s -d build ; cd build ; java %s',dir,fn,fnwe))
-        elseif ext=="sh" then
-           execTerm(string.format('cd %s ; sh %s',dir,fp))
+        -- elseif ext=="sh" then
+        --    execTerm(string.format('cd %s ; sh %s',dir,fp))
         elseif ext=="py" then
            execTerm(string.format('cd %s ; python %s',dir,fp))
         elseif ext=="js" then
