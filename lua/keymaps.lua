@@ -87,10 +87,14 @@ map("v","<C-w>","<Esc><C-w>wi",{ silent = true, noremap = true } )
 
 
 vim.api.nvim_command('command BufOnly silent! execute "%bd|e#|bd#"')
+
 vim.api.nvim_create_user_command('RemoveTrailingWhiteSpaces',function()
     vim.api.nvim_command(':%s/\\s\\+$//e')
 end,{})
 
+vim.api.nvim_create_user_command('GenSelectModel',function()
+    require('gen').select_model()
+end,{})
 
 
 --  CP

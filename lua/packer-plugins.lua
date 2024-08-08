@@ -187,4 +187,9 @@ return require('packer').startup(function(use)
 
     -- Jupyter notebook
     -- use { 'dccsillag/magma-nvim', run = ':UpdateRemotePlugins' }
+
+    -- Gen.nvim : Generate text using LLMs with customizable prompts
+    use {
+        "David-Kunz/gen.nvim",
+    }
 end)

@@ -42,6 +42,8 @@ require('luasnips-config')
 -- Jupyter notebook
 -- require('magma-nvim')
 
+require('gen-config')
+
 
 
 if G.getOS() == "Linux" then
